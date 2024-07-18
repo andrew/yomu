@@ -95,7 +95,7 @@ class Yomu
 
   def initialize(input)
     if input.is_a? String
-      if File.exists? input
+      if File.exist? input
         @path = input
       elsif input =~ URI::regexp
         @uri = URI.parse input
